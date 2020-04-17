@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Code\CodeTemple\IRepositoryTemplate.txt" />
+    <None Remove="Code\CodeTemple\IServicesTemplate.txt" />
+    <None Remove="Code\CodeTemple\ModelTemplate.txt" />
+    <None Remove="Code\CodeTemple\RepositoryTemplate.txt" />
+    <None Remove="Code\CodeTemple\ServiceTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Code\CodeTemple\IRepositoryTemplate.txt" />
+    <EmbeddedResource Include="Code\CodeTemple\IServicesTemplate.txt" />
+    <EmbeddedResource Include="Code\CodeTemple\ModelTemplate.txt" />
+    <EmbeddedResource Include="Code\CodeTemple\RepositoryTemplate.txt" />
+    <EmbeddedResource Include="Code\CodeTemple\ServiceTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="Dapper.SimpleCRUD" Version="2.2.0" />
+    <PackageReference Include="EnyimMemcached" Version="2.16.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.0.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Npgsql" Version="4.1.2" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+</Project>
